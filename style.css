@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    padding: 0 5vw;
+  }
+  
+  header img {
+    width: 12vw;
+    border-radius: 50%;
+    margin-right: auto;
+  }
+  
+  header h1 {
+    font-size: 4vw;
+    margin: 0;
+    color: white;
+  }
+  
+  header nav {
+    display: flex;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    margin: 0 3vw;
+    font-size: 3vw;
+  }
+  
+  main section {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 90vw;
+    max-width: 300px;
+    margin: 5vw;
+    background-color: #f9f9f9;
+    border-radius: 2vw;
+    overflow: hidden;
+    box-shadow: 0 2vw 4vw rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .card-content {
+    padding: 5vw;
+    text-align: center;
+  }
+  
+  .card-content h2 {
+    margin-top: 0;
+  }
+  
+  .card-content button {
+    padding: 2vw 4vw;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 1vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+    margin-top: 10%;
+  }
+  
+  .card-content button:hover {
+    background-color: darkblue;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    header {
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+    }
+  
+    header img {
+      margin-bottom: 2vw;
+      margin-right: 2vw;
+    }
+  
+    header nav {
+      margin-top: 2vw;
+    }
+  
+    a {
+      font-size: 3vw;
+    }
+  
+    main section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .card {
+      margin: 5vw auto;
+    }
+  }
